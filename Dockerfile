@@ -19,6 +19,8 @@ RUN git clone --single-branch --branch release/7.1 https://git.v0l.io/ffmpeg/FFm
     --disable-programs \
     --disable-doc \
     --disable-network \
+    --disable-static \
+    --disable-postproc \
     --enable-gpl \
     --enable-libx264 \
     --enable-libx265 \
@@ -26,8 +28,6 @@ RUN git clone --single-branch --branch release/7.1 https://git.v0l.io/ffmpeg/FFm
     --enable-libvpx \
     --enable-libopus \
     --enable-libdav1d \
-    --disable-static \
-    --disable-postproc \
     --enable-shared && \
     make -j$(nproc) install
 COPY . .

@@ -1,5 +1,7 @@
-/target
-/.idea
+target
+.idea
+.vscode
+Cargo.lock
 
 # Test output
 /test_output
