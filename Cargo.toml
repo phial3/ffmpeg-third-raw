@@ -1,20 +1,20 @@
 [package]
-name = "ffmpeg-rs-raw"
+name = "ffmpeg-third-raw"
 version = "0.1.0"
 edition = "2021"
 repository = "https://git.v0l.io/Kieran/ffmpeg-rs-raw.git"
-authors = ["Kieran"]
+authors = ["Kieran", "github.com/v0l", "github.com/shssoichiro", "github.com/phial3"]
 
 [lib]
 crate-type = ["lib", "cdylib"]
 
 [dependencies]
-anyhow = "1.0"
-ffmpeg-sys-the-third = { git = "https://github.com/shssoichiro/ffmpeg-the-third.git", branch = "master", package = "ffmpeg-sys-the-third" }
-libc = { version = "0.2" }
-slimbox = "0.1"
+libc = "0.2"
 log = "0.4"
+anyhow = "1.0"
+slimbox = "0.1"
+ffmpeg-sys-the-third = { git = "https://github.com/shssoichiro/ffmpeg-the-third.git", branch = "master", package = "ffmpeg-sys-the-third" }
 
 [dev-dependencies]
-env_logger = "0.11.5"
-rlimit = "0.10.2"
+rlimit = "0.10"
+env_logger = "0.11"

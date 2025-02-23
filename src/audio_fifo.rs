@@ -73,9 +73,9 @@ impl AudioFifo {
 mod tests {
     use super::*;
     use crate::Encoder;
-    use std::ptr;
+    use ffmpeg_sys_the_third::AVCodecID::AV_CODEC_ID_AAC;
     use ffmpeg_sys_the_third::{av_channel_layout_default, av_packet_free, AVChannelLayout};
-    use ffmpeg_sys_the_third::AVCodecID::{AV_CODEC_ID_AAC};
+    use std::ptr;
 
     #[test]
     fn test_buffer() -> Result<()> {

@@ -1,12 +1,10 @@
 # ffmpeg-third-raw
 
-**UNSAFE** ffmpeg lib
-
 Providing common utility classes in an unsafe manner.
 
 ## Example
 Decoding a video file:
-```rust
+```rust,ignore
 // Demuxer extracts the streams (audio/video) 
 // from the container (mp4/mov/avi/mkv etc.)
 let mut demuxer = Demuxer::new("./example.mp4");
